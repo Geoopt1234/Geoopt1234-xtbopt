@@ -1,0 +1,1 @@
+xtb MOLECULE.sdf --ohess extreme --acc 0.0001 --alpb SOLVENT --chrg CHARGE --input gbsa_extreme.inp --gfn 2 -P CORE --iterations 1000 --cycle 10000

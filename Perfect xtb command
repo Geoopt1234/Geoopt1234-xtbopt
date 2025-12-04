@@ -1,5 +1,6 @@
-xtb MOLECULE.sdf --ohess extreme --acc 0.0001 --alpb SOLVENT --chrg CHARGE --input gbsa_extreme.inp --etemp 300 --uhf UNPAIRED_ELECTRON --iterations 1000 --cycle 10000 --gfn 2 -P CORE --verbose --strict
+xtb MOLECULE.sdf --ohess extreme --acc 0.0001 --alpb SOLVENT --chrg NET_CHARGE --input gbsa_extreme.inp --etemp 300 --uhf UNPAIRED_ELECTRON --iterations 1000 --cycles 10000 --molden --gfn 2 -P CORE --verbose --strict
 #Note that --etemp 300, --uhf 0, and --gfn 2 are default settings for most calculations if the molecule is a closed-shell, neutral system.
+#If no solvent is required, remove --alpb and --input flags.
 UNPAIRED_ELECTRON = 0 for almost all cases.
 You can use `--ceasefiles` to	reduce secondary file outputs (Less cluttering. However, the Zenovo link should always contain every technical files, including ones that would be deleted if using the --ceasefiles).
 `--verbose` is used to provide detailed screen output for debugging/monitoring.

@@ -1,17 +1,17 @@
 # 📁 Geoopt1234-xtbopt Database Structure
 ## Repository Organization
 ```Geoopt1234-xtbopt/
-├── Methodology/ # Standards & protocols
 ├── Benchmarks/ # Proof-of-concept giants (e.g., [36]CPP)
-├── Drugs_WHO_Essential/ # WHO Essential Medicines
+├── Methodology/ # Standards & protocols
 ├── Miscellaneous/ # Other interesting molecules
-└── Scripts/ # Python/bash tools for validation
+├── Scripts/ # Python/bash tools for validation
+└── WHO EML 24th List (2025)/ # WHO Essential Medicines
 ```
 ## Per-Molecule Organization (this is applied for all molecules)
 ```
 [Molecule_Name]
-├── INPUT.sdf
-├── INPUT_InChI.sdf
+├── Input.sdf
+├── Input_InChI.sdf
 ├── [SOLVENT]_[NETCHARGE]_[ETEMP]_[UHF]-pH7.4/
 │ ├── Command.txt # Exact xtb command used
 │ ├── xtbopt.sdf # Optimized geometry

@@ -16,7 +16,6 @@
 │ ├── Command.txt # Exact xtb command used
 │ ├── xtbopt.sdf # Optimized geometry
 │ ├── InChI.txt # Generated from final structure
-│ └── Validation Report.md # Pass/Fail quality check
 ├── [SOLVENT]\_[NETCHARGE]\_[ETEMP]\_[UHF]-pH7.4/
 ...
 ```

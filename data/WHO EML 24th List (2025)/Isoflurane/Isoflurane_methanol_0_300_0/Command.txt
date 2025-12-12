@@ -1,0 +1,1 @@
+"D:\Hoai\CHEMISTRY\xtb-6.7.1pre\xtb-6.7.1\bin\xtb.exe" "D:\Hoai\CHEMISTRY\Molecules\WHO\Isoflurane\Isoflurane.sdf" --ohess extreme --acc 0.0001 --alpb methanol --chrg 0 --input "D:\Hoai\CHEMISTRY\Molecules\gbsa_extreme.inp" --etemp 300 --uhf 0 --iterations 1000 --cycles 10000 --molden --gfn 2 -P 1 --verbose --strict 

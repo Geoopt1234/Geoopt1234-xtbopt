@@ -1,0 +1,1 @@
+xtb "Sevoflurane.sdf" --ohess extreme --acc 0.0001 --alpb chcl3 --input gbsa_extreme.inp --chrg 0 --etemp 300 --uhf 0 --iterations 1000 --cycles 10000 --molden --gfn 2 -P 1 --verbose --strict 

@@ -1,5 +1,0 @@
-* Input_File: "D:\Hoai\CHEMISTRY\Molecules\WHO\Isoflurane\Isoflurane_hexadecane_0_300_0\xtbopt.sdf"
-Structure: 1
-InChI=1S/C3H2ClF5O/c4-1(3(7,8)9)10-2(5)6/h1-2H/t1-/m1/s1
-AuxInfo=1/0/N:8,10,9,1,5,6,2,3,4,7/E:(5,6)(7,8,9)/it:im/rA:12nClFFFFFOCCCHH/rB:;;;;;;s1s7;s2s3s4s8;s5s6s7;s8;s10;/rC:.4444,2.1169,-.3531;2.5816,.0482,-.6404;1.439,-1.6502,.0013;1.7634,-.0066,1.3461;-2.9212,-.284,.8072;-2.3454,-.3065,-1.2722;-.8033,-.1078,.3396;.2372,.3354,-.4553;1.5211,-.3219,.0802;-2.0694,.2394,-.0669;.1113,.0731,-1.5152;-2.2333,1.3296,-.1406;
-InChIKey=PIWKPBJCKXDKJR-PVQJCKRUSA-N

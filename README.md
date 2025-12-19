@@ -1,5 +1,72 @@
 # Geoopt1234-xtbopt
-This is a library that contains the optimized sdf files of interested chemical substances (WHO EML 2025, alkaloids, etc...) and all of the technical files of interested molecule.
-No need for asking me to have permission to use the file for future development of computational chemistry or any chemically related fields/companies/studies. Please read `LICENSE` if you're unsure what to do.
-To get started, start with the class of the molecules you're interested (i.e. alkaloids, WHO drugs etc...).
-Each molecule folder contains xtbopt.sdf, `command.txt` that specify the exact command for calculation, and `Zenovo.txt` that will contain ta link to all other technical files needed for verfication such as `hessian`, `xtbopt.log`, `g98.out`, `gfnff_topo` (if any), etc...
+
+A computational chemistry database of consistently optimized molecular geometries with complete calculation provenance.
+
+## Data Structure
+
+### GitHub Repository
+This repository contains essential research data organized as:<br>
+```
+data/[Chemical Class]/[Molecule Name]/
+├── [Molecule].sdf # Starting geometry
+├── [Molecule]_InChI.txt # Chemical identity validation
+└── [Molecule]_solvent_charge_temp_spin/
+    ├── command.txt # Exact xtb command used
+    ├── InChI.txt # Validation of optimized structure
+    ├── xtbopt.sdf # Final optimized geometry
+    └── Zenodo.txt # Link to complete calculation archive
+```
+
+### Zenodo Archives
+Complete technical records (logs, hessians, frequencies, etc.) are archived on Zenodo in 50GB volumes. Each molecule's `Zenodo.txt` file contains a direct link to its specific archive volume.
+
+## Usage
+
+1. **Navigate** to a chemical class in `data/` (e.g., `WHO EML 24th List (2025)`)
+2. **Select** a molecule folder
+3. **Use** `xtbopt.sdf` for optimized geometries
+4. **Reference** `command.txt` for calculation methodology
+5. **Consult** `Zenodo.txt` for complete technical verification
+
+## Calculation Protocol
+
+All geometries are optimized using:
+- `xtb` 6.7.1 with GFN2-xTB method
+- ALPB implicit solvation (26 environments including vacuum)
+- Extreme convergence criteria (`--ohess extreme --acc 0.0001`)
+- Physiological protonation states at pH 7.4
+
+## Licensing
+
+### Dual License Scheme
+
+**Academic/Non-Commercial Use:**
+- MIT License - Permissive use with attribution
+- Covers research, education, and non-commercial applications
+See [LICENSE]
+
+**Commercial Use:**
+- Alternative commercial license available upon request
+- Contact for proprietary application terms
+- All files including MOLECULE_InChI.txt, MOLECULE.sdf, and all files in solvent folders are completely in public domain according to CC0 1.0 Universal legal code
+Complete license terms are in the `LICENSE` file in the repository root.
+See [LICENSE-CC0-FILES]
+
+## Citation
+
+When using this database, cite both:
+1. This GitHub repository
+2. The relevant Zenodo archive volume(s) for reproducibility
+
+## Verification
+
+All structures undergo:
+1. InChI matching between source and optimized geometries
+2. Gradient norm convergence verification
+3. Frequency validation (no imaginary frequencies)
+
+Full verification data is accessible via Zenodo links in each molecule folder.
+
+## Contributing
+
+See `CONTRIBUTING.md` for molecule submission guidelines and quality standards.

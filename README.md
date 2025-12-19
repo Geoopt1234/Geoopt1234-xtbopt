@@ -42,15 +42,15 @@ All geometries are optimized using:
 
 **Academic/Non-Commercial Use:**
 - MIT License - Permissive use with attribution
-- Covers research, education, and non-commercial applications
-See [LICENSE]
+- Covers research, education, and non-commercial applications<br>
+See [LICENSE](https://github.com/Geoopt1234/Geoopt1234-xtbopt/blob/main/LICENSE)
 
 **Commercial Use:**
 - Alternative commercial license available upon request
 - Contact for proprietary application terms
 - All files including MOLECULE_InChI.txt, MOLECULE.sdf, and all files in solvent folders are completely in public domain according to CC0 1.0 Universal legal code
-Complete license terms are in the `LICENSE` file in the repository root.
-See [LICENSE-CC0-FILES]
+Complete license terms are in the `LICENSE` file in the repository root.<br>
+See [LICENSE-CC0-FILES](https://github.com/Geoopt1234/Geoopt1234-xtbopt/blob/main/LICENSE-CC0-FILES)
 
 ## Citation
 

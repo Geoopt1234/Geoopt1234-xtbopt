@@ -33,7 +33,7 @@ Complete technical records (logs, hessians, frequencies, etc.) are archived on Z
 All geometries are optimized using:
 - `xtb` 6.7.1 with GFN2-xTB method
 - ALPB implicit solvation (26 environments including vacuum)
-- Extreme convergence criteria (`--ohess extreme --acc 0.0001 ---iterations 1000 --cycles 10000 -input gbsagrid=extreme --etemp 300 --gfn 2 -P 1 --strict` as a minimum requirement)
+- Extreme convergence criteria (`--ohess extreme --acc 0.0001 --iterations 1000 --cycles 10000 --input gbsagrid=extreme --etemp 300 --gfn 2 -P 1 --strict` as a minimum requirement)
 - Physiological protonation states at pH 7.4 (only for alkaloids and biology related molecules)
 
 ## Licensing
